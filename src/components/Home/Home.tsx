@@ -1,13 +1,10 @@
-import React, { FC } from "react";
+import * as React from "react";
 import NavBar from "../NavBar/NavBar";
-import styles from "./Home.module.scss";
 
 interface HomeProps {}
-
-const Home: FC<HomeProps> = () => (
-  <div className={styles.Home} data-testid="Home">
-    <NavBar />
-  </div>
-);
-
-export default Home;
+interface HomeState {}
+export default class Home extends React.Component<HomeProps, HomeState> {
+  render() {
+    return <NavBar />;
+  }
+}
