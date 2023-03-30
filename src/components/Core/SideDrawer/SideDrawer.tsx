@@ -1,16 +1,13 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import HomeIcon from "@mui/icons-material/Home";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { ListItemIcon } from "@mui/material";
+import { Button, Icon, ListItemIcon } from "@mui/material";
+import { routes } from "../../../constants/routes";
 
 type Anchor = "top" | "left" | "bottom" | "right";
 
@@ -62,16 +59,16 @@ export default class SideDrawer extends React.Component<
       onKeyDown={this.toggleDrawer(anchor, false)}
     >
       <List>
-        {
-          <ListItem key={"Home"} disablePadding>
-            <ListItemButton>
+        {routes.map((route) => (
+          <ListItem key={route.display} disablePadding>
+            <ListItemButton href={route.path}>
               <ListItemIcon>
-                <HomeIcon />
+                <Icon color="primary">{route.icon}</Icon>
               </ListItemIcon>
-              <ListItemText primary={"Home"} />
+              <ListItemText primary={route.display} />
             </ListItemButton>
           </ListItem>
-        }
+        ))}
       </List>
     </Box>
   );
@@ -83,6 +80,14 @@ export default class SideDrawer extends React.Component<
         open={this.props.open}
         onClose={this.props.closeDrawer}
       >
+        <div style={{ display: "flex" }}>
+          <Icon
+            onClick={this.props.closeDrawer}
+            style={{ marginRight: "auto", padding: "5px" }}
+          >
+            close
+          </Icon>
+        </div>
         {this.list(this.state.anchor)}
       </Drawer>
     );
