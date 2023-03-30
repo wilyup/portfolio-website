@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.scss";
-import Home from "./components/Home/Home";
+import Root from "./components/Core/Root/Root";
 
 function App() {
-  return <Home />;
+  return <Root />;
 }
 
 export default App;
