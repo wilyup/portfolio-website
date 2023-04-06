@@ -17,14 +17,6 @@ const Home: FC<HomeProps> = () => {
         >
           Hey, I&apos;m Will
         </Typography>
-        <Typography
-          color="white"
-          variant="h2"
-          component="div"
-          sx={{ flexGrow: 1 }}
-        >
-          I just shit myself
-        </Typography>
       </div>
     </div>
   );
