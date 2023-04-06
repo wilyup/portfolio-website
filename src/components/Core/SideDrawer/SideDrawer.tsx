@@ -63,7 +63,7 @@ export default class SideDrawer extends React.Component<
           <ListItem key={route.display} disablePadding>
             <ListItemButton href={route.path}>
               <ListItemIcon>
-                <Icon color="primary">{route.icon}</Icon>
+                <Icon>{route.icon}</Icon>
               </ListItemIcon>
               <ListItemText primary={route.display} />
             </ListItemButton>
