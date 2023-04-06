@@ -14,7 +14,7 @@ export const lightThemeOptions: ThemeOptions = {
     },
   },
   typography: {
-    fontFamily: "Droid Serif",
+    fontFamily: "Baloo",
   },
 };
 
@@ -32,7 +32,7 @@ export const darkThemeOptions: ThemeOptions = {
     },
   },
   typography: {
-    fontFamily: "Droid Serif",
+    fontFamily: "Baloo",
   },
 };
 

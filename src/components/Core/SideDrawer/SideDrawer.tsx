@@ -6,7 +6,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import HomeIcon from "@mui/icons-material/Home";
 import ListItemText from "@mui/material/ListItemText";
-import { Button, Icon, ListItemIcon } from "@mui/material";
+import { Button, Divider, Icon, ListItemIcon, Typography } from "@mui/material";
 import { routes } from "../../../constants/routes";
 
 type Anchor = "top" | "left" | "bottom" | "right";
@@ -80,14 +80,18 @@ export default class SideDrawer extends React.Component<
         open={this.props.open}
         onClose={this.props.closeDrawer}
       >
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", padding: "20px" }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Menu
+          </Typography>
           <Icon
             onClick={this.props.closeDrawer}
             style={{ marginRight: "auto", padding: "5px" }}
           >
-            close
+            chevron_right
           </Icon>
         </div>
+        <Divider />
         {this.list(this.state.anchor)}
       </Drawer>
     );

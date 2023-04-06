@@ -41,7 +41,7 @@ export default class NavBar extends React.Component<NavBarProps, NavBarState> {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                News
+                Home
               </Typography>
             </Toolbar>
           </AppBar>
