@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import SideDrawer from "../SideDrawer/SideDrawer";
+import { Tooltip } from "@mui/material";
 
 interface NavBarProps {}
 interface NavBarState {
@@ -30,6 +31,7 @@ export default class NavBar extends React.Component<NavBarProps, NavBarState> {
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
+            <Tooltip title="Menu">
               <IconButton
                 size="large"
                 edge="start"
@@ -40,6 +42,7 @@ export default class NavBar extends React.Component<NavBarProps, NavBarState> {
               >
                 <MenuIcon />
               </IconButton>
+              </Tooltip>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Home
               </Typography>

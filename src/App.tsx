@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@mui/material";
 import React from "react";
 import "./App.scss";
-import Root from "./components/Core/Root/Root";
-import { darkTheme } from "./theme";
+import Root from "./app/components/Core/Root/Root";
+import { darkTheme } from "./style/theme";
 
 function App() {
   return (

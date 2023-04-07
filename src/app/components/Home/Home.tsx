@@ -17,6 +17,7 @@ const Home: FC<HomeProps> = () => {
         >
           Hey, I&apos;m Will
         </Typography>
+        <img className={styles.circle} src="/Will_Yuponce.png" alt="Will Yuponce"/>
       </div>
     </div>
   );
