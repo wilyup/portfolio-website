@@ -1,10 +1,21 @@
-.MyInfo {
-  padding-top: 100px;
-  width: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+@media (max-width: 880px) {
+  .MyInfo {
+    padding-top: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
+
+  .MyInfo {
+    padding-top: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
 .infoCardContent {
   display: flex;
@@ -14,7 +25,7 @@
   justify-content: space-around;
 }
 
-.avatar{
+.avatar {
   filter: drop-shadow(5px 5px 10px #000000);
 }
 
@@ -22,7 +33,7 @@
   background-color: #121212;
 }
 
-.iconGroup{
+.iconGroup {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -30,8 +41,8 @@
   justify-content: space-between;
 }
 
-.icons{
-    outline: 1px black;
+.icons {
+  outline: 1px black;
 }
 
 .textBlock {
@@ -42,7 +53,7 @@
   align-items: flex-start;
 }
 
-.contactRow{
+.contactRow {
   display: flex;
   flex-direction: row;
   align-items: center;
