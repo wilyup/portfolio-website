@@ -1,0 +1,15 @@
+.MyInfo {
+  padding: 20px;
+}
+
+.infoCardContent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.infoCard {
+  background-color: #121212;
+}
