@@ -1,15 +1,49 @@
 .MyInfo {
-  padding: 20px;
+  padding-top: 100px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .infoCardContent {
   display: flex;
-  flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
+}
+
+.avatar{
+  filter: drop-shadow(5px 5px 10px #000000);
 }
 
 .infoCard {
   background-color: #121212;
+}
+
+.iconGroup{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-between;
+}
+
+.icons{
+    outline: 1px black;
+}
+
+.textBlock {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

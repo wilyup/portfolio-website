@@ -31,7 +31,7 @@ export default class NavBar extends React.Component<NavBarProps, NavBarState> {
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
-            <Tooltip title="Menu">
+            {/* <Tooltip title="Menu">
               <IconButton
                 size="large"
                 edge="start"
@@ -42,7 +42,7 @@ export default class NavBar extends React.Component<NavBarProps, NavBarState> {
               >
                 <MenuIcon />
               </IconButton>
-              </Tooltip>
+              </Tooltip> */}
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Home
               </Typography>

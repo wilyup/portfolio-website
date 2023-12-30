@@ -7,8 +7,10 @@ interface HomeProps {}
 const Home: FC<HomeProps> = () => {
   return (
     <div className={styles.Home}>
-      <div className={styles.diagonalSplitBackground}>
+      <div className={styles.background}>
+        <div className={styles.infoCard}>
         <MyInfo/>
+        </div>
       </div>
     </div>
   );
