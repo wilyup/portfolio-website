@@ -13,7 +13,7 @@ const MyInfo: FC<MyInfoProps> = () => (
       <CardContent className={styles.infoCardContent}>
         <Avatar
           sx={{ width: 200, height: 200 }}
-          src="/Will_Yuponce.jpeg"
+          src="/will_yuponce.jpeg"
           alt="Will Yuponce"
         />
 
